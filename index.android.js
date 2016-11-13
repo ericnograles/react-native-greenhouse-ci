@@ -13,6 +13,8 @@ import {
   TouchableOpacity
 } from 'react-native';
 
+import codePush from 'react-native-code-push';
+
 export default class GreenhouseExample extends Component {
   render() {
     return (
@@ -50,5 +52,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+const codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME};
+const AppWithCodePush = codePush(codePushOptions)(GreenhouseExample);
 
 AppRegistry.registerComponent('GreenhouseExample', () => GreenhouseExample);

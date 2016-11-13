@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">Cg8rRMauT9kjtyoCa1zJwNqsSo20Vk2lxSb-G</string>
+    <string name="app_name">GreenhouseExample</string>
+</resources>
